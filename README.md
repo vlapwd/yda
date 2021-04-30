@@ -30,8 +30,9 @@
 
 GCPのダッシュボードの、APIとサービス > ライブラリ > Youtube Data API v3 で有効にするを選択  
 そのまま、管理 > 認証情報の認証情報を作成でOAuth2.0クライアントIDを作成  
-アプリケーションの種類はデスクトップアプリを選択(ウェブアプリケーションを選びたくなるが、この後でダウンロードするclient_secret.jsonにredirect_urisが作成されないため(必須))  
-作成できたら作ったクライアントIDのJSONをダウンロードからclient_secret.jsonをダウンロードし、プロジェクトの良き場所へ
+アプリケーションの種類はデスクトップアプリを選択  
+(ウェブアプリケーションを選びたくなるが、この後でダウンロードするclient_secret.jsonにredirect_urisが作成されないため(必須))  
+作成できたら作ったクライアントIDのJSONをダウンロードからclient_secret.jsonをダウンロードし、プロジェクトの良き場所へ  
 [クイックスタート](https://github.com/youtube/api-samples/blob/master/go/quickstart.go)がある  
 [forUserName](https://github.com/youtube/api-samples/blob/master/go/quickstart.go#L109)となっているが、チャンネルIDから所得したいので[Id](https://pkg.go.dev/google.golang.org/api/youtube/v3#ChannelsListCall.Id)に変更  
 [レスポンスの中身](https://github.com/googleapis/google-api-go-client/blob/de9f25cba16a59e6a62c6b97478882f5392143f5/youtube/v3/youtube-gen.go#L1925)  
